@@ -1,0 +1,6 @@
+#This is a file created the nore all the changes and behaviours of files redirection in linux
+ls > output.txt -> STDIN output to a file(So print a file)
+ls >> output.txt -> STDIN output to a file,apprend (So print a file with more possibities)
+ls 2 >error.log  ->STERR output to a file
+ls 2 > /dev/null 
+ls &> /dev/null STEOUT and STDERR output to null 

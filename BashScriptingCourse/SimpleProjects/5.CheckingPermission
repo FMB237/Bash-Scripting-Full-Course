@@ -1,0 +1,11 @@
+#!/bin/bash
+#Use to check who is the root or a simple user in my linux computer
+#For this chcecking we gonna used an environment variable call $UID
+
+user=whoami
+if [ $UID -eq 0 ]
+then
+    echo "You are the root user"
+else
+    echo "You are not the root user"
+fi
