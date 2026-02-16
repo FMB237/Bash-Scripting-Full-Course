@@ -1,7 +1,6 @@
-#!/bin/bash 
+#!/bin/bash
 
-#They main aim of this file is to illustrant the usage of the  syslink in bash 
-#That is the creation of files that are permently linked to each other.
+# The main aim of this file is to illustrate the usage of symlinks in bash
+# That is the creation of files that are permanently linked to each other.
 
 echo "Hello World"
-

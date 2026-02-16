@@ -1,9 +1,9 @@
 #!/bin/bash
-#Let learn hwo to used variables in Bash
+# Let's learn how to use variables in Bash
 
 greeting="Hello i'm Miguel Bruce"
 age=21
-#Let add another variables
+# Let's add another variable
 FullName="Fouenang Miguel Bruce"
-echo  $greeting  $age year old
-echo So my FullName is  $FullName  and i am actually a level 4 ingenering student.
+echo "$greeting, $age years old"
+echo "So my FullName is $FullName and I am actually a level 4 engineering student."
