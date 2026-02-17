@@ -65,3 +65,9 @@ When Writing bash scripts we can give the authour of the scripts and the verions
 You will find it in the file name hello.sh the script can also be execute using the command bash "scriptname".For more bash function use the command 
 *bash --help or man bash to have more informations about the used of the bash command*
 *we use the commands set -x and set -x respectively to turn on and off debugging in our scripts*
+
+# Lesson 4: Playing with Variables
+**Let Create a Small Script which will create a folder with a small text file inside and list the contain of our Folder**
+- Look at the script with name create.sh which can create a Folder with a file inside
+- The scripts with name variable.sh is been used to show how variables are been used and represented in bash
+- Note that to used rebuild system variables we store using the $ symbols like *list=$(ls)*
