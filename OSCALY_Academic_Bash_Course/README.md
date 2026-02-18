@@ -81,5 +81,22 @@ You will find it in the file name hello.sh the script can also be execute using 
 4. But today we mostly used the double quotation method for arithmetic opearations. **somme=$((50+40))**
 5. Let Create a  new file with name arrays.sh
 6. Let Create a new file with name stream.sh which is a program that will permit to interact with one or more bash scripts
-7. We also used the rebuild command sleep to make a program sleep for a given time after execution.
+7. We also used the rebuild command sleep to make a program sleep for a given time after execution.e.g **sleep 10 & echo "I was sleeping"**
 8. We used a simple colonne to make our command run sequentially one after another like **ls;ps;whoami**
+9. This simple command are mainly called controllers.
+---
+# Lesson 6 : Input/Output Mastery(Redirection && syntax)
+1. In this lesson we will first create a script call redirection.sh
+2. In linux the proecess of redirection is mainly the taking of the input of a scripts and output it in another.
+3. let Used the EOF bash command redirection insert informations into a file 
+4. Also using the pipe operator which is mainly **|** 
+
+---
+
+# Lesson 7 : Interactive operations 
+1. Let move on to positional_arguements so let create a scripts with and name positional_arguement
+2. In the positional_arguements script we write the script that can ping to any webiste we want so the target is the varable ${1}
+3. Let move on to interactive scripts which permit us to enter inputs and observe outputs.
+4. In that file we used the **read -r** to capture our inputs.
+5. In bash some scripts may faces errors and this can be dangerous since the can break our system so we prefers using exit_code which permit to the scripts to stop when it encounters an error to protect our system.
+6. All this errors have separate errors that can be intertified and reuse for works to avoid problem
