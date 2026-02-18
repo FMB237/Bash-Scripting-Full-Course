@@ -50,7 +50,7 @@ Use the command version to check the version of our app install on linux
 
 # Lesson 3 :Bash Shebang and executions
 **The Bash Shebangs**
-By default the bash shebangs is given by *#!/bin/bash* this the traditional bin/bash shebangs line we can also used this our python script by giving the path to the scripts that is *#!/usr/bin/python3*
+By default the bash shebangs is given by **#!/bin/bash** this the traditional bin/bash shebangs line we can also used this our python script by giving the path to the scripts that is **#!/usr/bin/python3**
 **Note to found my scripts or app location on linux we use the command " whereis <appname> "**
 *Example whreeis bash or whereis python3* So we can always select our interpreter.
 
@@ -65,9 +65,21 @@ When Writing bash scripts we can give the authour of the scripts and the verions
 You will find it in the file name hello.sh the script can also be execute using the command bash "scriptname".For more bash function use the command 
 *bash --help or man bash to have more informations about the used of the bash command*
 *we use the commands set -x and set -x respectively to turn on and off debugging in our scripts*
+---
 
 # Lesson 4: Playing with Variables
 **Let Create a Small Script which will create a folder with a small text file inside and list the contain of our Folder**
 - Look at the script with name create.sh which can create a Folder with a file inside
 - The scripts with name variable.sh is been used to show how variables are been used and represented in bash
 - Note that to used rebuild system variables we store using the $ symbols like *list=$(ls)*
+---
+
+# Lesson 5 : Computation Power(Arrays and Arithemetic operations)
+1. Let Create a file with name arithmetic.sh in which we will undergoes and used all the mathmatical operations in bash
+2. Bash supports multiple opeartion on like C and Python that is addition,substraction,division,modulo,multiplication e.t.c
+3. All this operation can be done using the let command  that is **let result=4+5** Then echo the resuly od our calcualtions
+4. But today we mostly used the double quotation method for arithmetic opearations. **somme=$((50+40))**
+5. Let Create a  new file with name arrays.sh
+6. Let Create a new file with name stream.sh which is a program that will permit to interact with one or more bash scripts
+7. We also used the rebuild command sleep to make a program sleep for a given time after execution.
+8. We used a simple colonne to make our command run sequentially one after another like **ls;ps;whoami**
