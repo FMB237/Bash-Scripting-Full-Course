@@ -14,7 +14,6 @@ When a command is been type into the command the bash in the interprete between 
 - Bash(Interpreter)
 - Linux Executables(The Workhorses) nmap,ls,grep
 ---
-
 **Bash inlcude many Features**
 1. Command Executions : Which permit us to run script
 2. Command Completion : Help us in task compleations
@@ -100,3 +99,34 @@ You will find it in the file name hello.sh the script can also be execute using 
 4. In that file we used the **read -r** to capture our inputs.
 5. In bash some scripts may faces errors and this can be dangerous since the can break our system so we prefers using exit_code which permit to the scripts to stop when it encounters an error to protect our system.
 6. All this errors have separate errors that can be intertified and reuse for works to avoid problem
+
+---
+# Lesson 8 : How computer communicate
+To understand bash scripting in a more advance way we need to know principally how the computer components communicate between each others That is we need to know and understand the Databus inside a computer.
+The modern computer  hardware includes mainly 3 part consisting of the **Data bus** mainly :
+- The CPU: Central proccesssing unit(Control Bus)
+- Memory : It main roles is to store the data in to our system.It is also call the **Address bus since informations can move from the Cpu or can also comes from the I/0 but not at the same times**
+- I/O(input/output) : These are mainly inputs and outputs which includes all the sets of instructions we alreasy knows **Note:Inputs and Outputs are equal**
+-
+---
+# Lesson 9 : What happen in background
+Let look how to computer communicate in the background  so mainly how computer incode and store data.For a single task to be done using our computers we mainly need a billons of connections to happen in background that is mainly done in binary.mainly like ligthing a bulb.In modern computers we have transitor which can only have 2 stats either **ON** or **OFF** that is the reason will in modern computers today we can mainly have mesure the power of the computers from i number of transisitors which consitue a real deal like today we the used of microtechnologies.
+
+**What is a bit ?**
+A bit the smallest unit of computer and bit comes from binary digit.Binary digits only includes 0 and 1 :
+1. 8bits= 1bytes(Which stores an information that is character)
+2. The parther representation of 8bits is ASCII e.g a character A define as 
+3. A= 10000010 B=01010010
+4. Binary is ideal for electronics but to the follwoing reasons
+- Effiency
+- Error resistance
+- Simple to use since we only have 2 stats
+
+**What is decimal ?**
+Decimal numbers on base 10 numbers are all the numbers from 0 to 9  so the number we aminly used everyday.That is human numbers
+**We also have Hexadecimal that goes from 0 to F**. All this can be converted to binary if wanted.That is 1000 1001 1010 0110 as a network energineering student i already know all this converion stuffs.
+
+---
+# Lesson 10 : Addition in decimal
+For us humans this is mainly basic additions but for a machine is the more complicated since only understands binary so if a number is enter as decimal i will be converted in binary before usage by the machine and then recover to decimal for human usages.
+Like an interger will  resife 32 bits for it operations while a simple characters will be stored into 8bits
