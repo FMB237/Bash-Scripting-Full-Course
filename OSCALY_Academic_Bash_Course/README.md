@@ -130,3 +130,32 @@ Decimal numbers on base 10 numbers are all the numbers from 0 to 9  so the numbe
 # Lesson 10 : Addition in decimal
 For us humans this is mainly basic additions but for a machine is the more complicated since only understands binary so if a number is enter as decimal i will be converted in binary before usage by the machine and then recover to decimal for human usages.
 Like an interger will  resife 32 bits for it operations while a simple characters will be stored into 8bits
+
+# Lesson 11: Arthemetic operations on unsigned intergers
+**Concept values**
+So the addition of numbers in globally from binary,decimal to hexadecimal(base16)
+With A=10,B=11,C=12...F=15(In decimal) while in binary we have more complex uses like A=1010,B=1011 ....F=1111.**In conclusion we mainly needs to go and check the conversions tables**
+
+
+# Lesson 12 : Boolean Algebra
+what are boolean ?
+In the 19's a british mathematicial **(George Boole)**  devlopper a new form of maths for decision making knows as boolean mainly used in programming today booleans are said to be the maths for decision like in python booleans only carrises two values either **True** or **False**
+Today in the design of circuits we mainly use them as prefers notation 
+**Example a Bulb can only be ON or OFF** so we making talking about logic control we place **True=1** and **False=0**
+This is also mainly seen with Logic gates.So the boolean algebra using the logic operators like **AND,OR,NOT** so we can only have a logical decision as result.
+
+Bro go and learn logic gates back.
+AND gates for multiplication so if we have 1 and 1 as input the output we be 1 and if not the output will be 0
+**AND gates: 1.1=1,1.0=0,0.=1** 
+**OR gates :0+0=0,0+1=1,1+0=1,1+1=1**
+**NOT gate:NOT(True)=False,NOT(False)=True**
+
+---
+# Lesson 13 :Introduction to Electronics
+This is most give anyone a basic understanding of how hardware and communicate together using logic gates.So we will define some key terms for our work 
+- What is current ?:Current refers to the movement of electrical charges.It is mesure in coulombs.If a flow of Coulumb per second so 1C/s= 1 Ampere
+- Voltage also called potential differcents which refers to the differcent in electrical energy per unit charge between 2 points.So 1volt is define as the potential differcent when a current of 1A flows through conductor result to the dispersion of 1 Watt of power.
+- Conductors the component that connect all the other together let it be active or passive components
+- Note each device are said to have a range of voltage the can suuport with a tolerance of +5% or -5% meaning can keep opeating on the range [4.75v-5.25v] if it basic voltage is 5v.
+- 
+# Lesson 14: Logic gates and their hardware implentation.
