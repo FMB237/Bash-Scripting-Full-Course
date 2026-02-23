@@ -157,5 +157,18 @@ This is most give anyone a basic understanding of how hardware and communicate t
 - Voltage also called potential differcents which refers to the differcent in electrical energy per unit charge between 2 points.So 1volt is define as the potential differcent when a current of 1A flows through conductor result to the dispersion of 1 Watt of power.
 - Conductors the component that connect all the other together let it be active or passive components
 - Note each device are said to have a range of voltage the can suuport with a tolerance of +5% or -5% meaning can keep opeating on the range [4.75v-5.25v] if it basic voltage is 5v.
-- 
+--- 
 # Lesson 14: Logic gates and their hardware implentation.
+1. Let talk about the resistors :
+ - Resistors are simple components that have the role to block the passing of current into our circuit (Avois the over-flow of current into a circuit in other to avoid the destrotion of that apparatures).
+2. Capacitors are use to stored energy into an electric field and resist change in the magnetism
+3. Inductors are been used to store energy within a magnetic field when current flows through through a coil.
+**This smalll set of apparature is call impendance** and impendance means resistance to changes mostly the change we are talking about is current
+And note that resistors,capacitors,switch and inductance are classified as passive components.
+*A switch is the component used for opening and closing the circuit as we said the circuit can either by open or close 0 or 1 for that we use a switch*
+- The amount of the resistance is generally choosen together with the amount of the inductance and capacitance ensuring that the current remains at a stady level to not destroy the device.The resistor doesn't store energy it only related the current flowing inside a device
+*Current Law*
+**V(t)=I(t).R(Ohms's Law)** where V(t)=voltage flowing in time T,I(t)=Current flowing throuhgh time T, R=Resistance
+Resistance is been mesured in ohms,Voltage in Watts and Current in Amperes.From the formular up we can derive all other formula terms.
+**Note:When the circuit is open the Current flowing into it is zero**
+From ohms's law we can see that I(t)=V(t)/R meansing that current is inversely proposional to resistance.
