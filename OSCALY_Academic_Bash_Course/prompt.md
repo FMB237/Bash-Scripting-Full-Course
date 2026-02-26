@@ -6,3 +6,4 @@
 5. Some examples of logic gates and how the are applied in bash scripting
 6. Recall me some defintion in electricity like current,voltage,passive and active components
 7. logic gates and their hardware implenmenations.
+8. Capacitors and implentation in a circuit.

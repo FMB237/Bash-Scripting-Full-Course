@@ -172,3 +172,30 @@ And note that resistors,capacitors,switch and inductance are classified as passi
 Resistance is been mesured in ohms,Voltage in Watts and Current in Amperes.From the formular up we can derive all other formula terms.
 **Note:When the circuit is open the Current flowing into it is zero**
 From ohms's law we can see that I(t)=V(t)/R meansing that current is inversely proposional to resistance.
+
+---
+# Let jump so lessons and move on to the bash programming again
+# Lesson 15: Conditional logic and Flow Control in Bash
+conditions operations in bash are crudetial operations for reading writing and delecting :
+1. The first symbols is *-d* which is been used to check weather the conditions applies to a directory.
+2. *-f* check weather we are in regular file pattern 
+3. *-x* checks if the file is executable mainly used to check if a dependency like nmap or curl is been avaliable.
+4. *-w* checks if  a script is writable
+5. *-r* checks if a file is readables
+6. *-s* checks if the file size is greater than 0
+
+**We also have the string comparaison operators**
+1. = or == (Checking if a script is been equal to another one)
+2. != (Negations of the strings on numbers).
+3.  -z  meaning is null ?
+4.  *-n* checks if a strings in is non-null so that if should not be empty.
+5. < (Less than) here we are talking about the number os caracters. 
+6. > (Greater than) 
+
+**Let us move on the number compaisons**
+1. For equality using intergers or numbers we mainly used some operations that are been also in bash  the symbol is **-eq example if[[ number -eq 10]]**  
+2. **-gt** means greater than
+3. **-ne** this is mainly used for loop control
+4. **-lt** means Less than
+5. **-ge** Greater than or equal to 
+6. **-le** Less than or equal to
