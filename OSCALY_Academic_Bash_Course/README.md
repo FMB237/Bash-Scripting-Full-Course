@@ -199,3 +199,17 @@ conditions operations in bash are crudetial operations for reading writing and d
 4. **-lt** means Less than
 5. **-ge** Greater than or equal to 
 6. **-le** Less than or equal to
+
+
+# Lesson 16: Functions in bash
+**What is a function??**
+- A function is been define as block of code that permit to execute a specific task in our code.
+- So function permits to avoid repetition in coding because we have a reusable block of code.
+- We gonna build a functions that permits to if a user in the root on not
+
+# Lesson 17:Loops 
+**What is a Loop?**
+A loop is simplie a piece of code that has been written to do a task continously.That is the reason while in programming people can build infinite loops which are loops that never end but we will always want to have an end point to our loops For more move on the loop.sh  file
+
+
+# Lesson 18: Creating IP Class identifier using CASE in bash
