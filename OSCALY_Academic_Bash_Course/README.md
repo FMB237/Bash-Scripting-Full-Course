@@ -183,7 +183,7 @@ conditions operations in bash are crudetial operations for reading writing and d
 4. *-w* checks if  a script is writable
 5. *-r* checks if a file is readables
 6. *-s* checks if the file size is greater than 0
-
+---
 **We also have the string comparaison operators**
 1. = or == (Checking if a script is been equal to another one)
 2. != (Negations of the strings on numbers).
@@ -200,16 +200,31 @@ conditions operations in bash are crudetial operations for reading writing and d
 5. **-ge** Greater than or equal to 
 6. **-le** Less than or equal to
 
-
+----
 # Lesson 16: Functions in bash
 **What is a function??**
 - A function is been define as block of code that permit to execute a specific task in our code.
 - So function permits to avoid repetition in coding because we have a reusable block of code.
 - We gonna build a functions that permits to if a user in the root on not
-
+----
 # Lesson 17:Loops 
 **What is a Loop?**
 A loop is simplie a piece of code that has been written to do a task continously.That is the reason while in programming people can build infinite loops which are loops that never end but we will always want to have an end point to our loops For more move on the loop.sh  file
 
-
+---
 # Lesson 18: Creating IP Class identifier using CASE in bash
+In this lesson we will mainly learn how to create an ip address identifier in bash
+So we will create a simple script with name case.sh which is will check weather an ip address is a Class A or Class C
+With Class A address which ranges from **10.0.0.0/8 to 10.255.255.255/8** and Class C ranges from **192.168.0.0 to 192.168.255.255**
+So we gonna check if an ip_address we will enter falls into this 2 networks
+
+
+# Lesson 19 : Jobs in bash
+When talking about jobs in bash we mainly refers about the **foreground jobs** and **background jobs**
+
+Foreground are scripts that runs and occupies the shells so if this tasks are nor done we can't execuet another one 
+While Background scripts are scripts that runs in silence in background so the runs behind the shell
+**Background jobs are mainly essentials for long tasks like network analyse or long file analyse and searches**
+**The foreground jobs are mainly used for instant tasks**
+
+So the Background runs as **sub-process**
