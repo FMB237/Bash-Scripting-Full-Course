@@ -218,7 +218,7 @@ So we will create a simple script with name case.sh which is will check weather 
 With Class A address which ranges from **10.0.0.0/8 to 10.255.255.255/8** and Class C ranges from **192.168.0.0 to 192.168.255.255**
 So we gonna check if an ip_address we will enter falls into this 2 networks
 
-
+---
 # Lesson 19 : Jobs in bash
 When talking about jobs in bash we mainly refers about the **foreground jobs** and **background jobs**
 
@@ -228,3 +228,12 @@ While Background scripts are scripts that runs in silence in background so the r
 **The foreground jobs are mainly used for instant tasks**
 
 So the Background runs as **sub-process**
+Let create a  file with name jobs.sh where we gonna runs our scripts
+
+
+# Section2 :Projects Developpements
+
+# Lesson 20: Ip address Generator using bash
+
+The last section was the uses of jobs in bash
+For ip addresss generation we mainly have about 3 methods been shown into the ip_address_generator.sh file
