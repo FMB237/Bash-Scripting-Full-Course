@@ -1,6 +1,148 @@
-#This is a file created the nore all the changes and behaviours of files redirection in linux
-ls > output.txt -> STDIN output to a file(So print a file)
-ls >> output.txt -> STDIN output to a file,apprend (So print a file with more possibities)
-ls 2 >error.log  ->STERR output to a file
-ls 2 > /dev/null 
-ls &> /dev/null STEOUT and STDERR output to null 
+# IO Redirection in Bash
+# A comprehensive guide to handling input/output in shell scripts
+
+# ============================================
+# 1. STANDARD STREAMS
+# ============================================
+
+# Bash has three standard streams:
+#   STDIN  (0)  - Standard Input  (keyboard, files)
+#   STDOUT (1)  - Standard Output (screen by default)
+#   STDERR (2)  - Standard Error  (screen by default)
+
+# ============================================
+# 2. OUTPUT REDIRECTION
+# ============================================
+
+# Redirect STDOUT to a file (overwrite)
+command > output.txt
+# Example: ls > files.txt
+
+# Redirect STDOUT to a file (append)
+command >> output.txt
+# Example: echo "New line" >> log.txt
+
+# Redirect STDERR to a file
+command 2> error.log
+# Example: ls /nonexistent 2> errors.txt
+
+# Redirect both STDOUT and STDERR to a file
+command > output.txt 2>&1
+# Or shorthand (Bash 4+):
+command &> output.txt
+
+# Redirect both to append to a file
+command >> output.txt 2>&1
+command &>> output.txt
+
+# ============================================
+# 3. INPUT REDIRECTION
+# ============================================
+
+# Read from file as STDIN
+command < input.txt
+# Example: sort < unsorted.txt
+
+# Here document (inline text)
+command << EOF
+line 1
+line 2
+EOF
+
+# Here string (single line)
+command <<< "input text"
+
+# ============================================
+# 4. DISCARDING OUTPUT
+# ============================================
+
+# Discard STDOUT (send to /dev/null)
+command > /dev/null
+
+# Discard STDERR
+command 2> /dev/null
+
+# Discard both STDOUT and STDERR
+command > /dev/null 2>&1
+command &> /dev/null
+
+# ============================================
+# 5. REDIRECTING TO MULTIPLE DESTINATIONS
+# ============================================
+
+# Using tee command (output to screen AND file)
+command | tee output.txt
+
+# Tee with append
+command | tee -a output.txt
+
+# Tee with stderr
+command 2>&1 | tee output.txt
+
+# ============================================
+# 6. FILE DESCRIPTORS
+# ============================================
+
+# Open file for reading (fd 3)
+exec 3< input.txt
+
+# Open file for writing (fd 4)
+exec 4> output.txt
+
+# Open file for appending (fd 5)
+exec 5>> log.txt
+
+# Use file descriptors
+echo "Writing to fd 4" >&4
+read line <&3
+
+# Close file descriptors
+exec 3<&-
+exec 4>&-
+
+# ============================================
+# 7. PRACTICAL EXAMPLES
+# ============================================
+
+# Example 1: Save stdout and stderr to separate files
+ls /existing /nonexisting > out.txt 2> err.txt
+
+# Example 2: Redirect stderr to stdout, then pipe both
+ls /existing /nonexisting 2>&1 | grep "No such"
+
+# Example 3: Swap stdout and stderr
+ls /existing /nonexisting 3>&1 1>&2 2>&3
+
+# Example 4: Process substitution (compare two command outputs)
+diff <(ls dir1) <(ls dir2)
+
+# ============================================
+# 8. COMMON MISTAKES
+# ============================================
+
+# WRONG: Space between 2 and >
+# command 2 > error.log    # ❌ Creates file named "2"
+
+# CORRECT:
+# command 2> error.log     # ✓ Redirects stderr
+
+# WRONG: Order matters with 2>&1
+# command 2>&1 > output.txt    # ❌ stderr goes to terminal
+
+# CORRECT:
+# command > output.txt 2>&1    # ✓ Both go to file
+
+# ============================================
+# Quick Reference
+# ============================================
+
+# >    - Redirect stdout (overwrite)
+# >>   - Redirect stdout (append)
+# <    - Redirect stdin (read from file)
+# 2>   - Redirect stderr
+# &>   - Redirect stdout and stderr (Bash 4+)
+# 2>&1 - Redirect stderr to stdout
+# > /dev/null 2>&1 - Discard all output
+# | tee - Write to file AND screen
+# <<   - Here document
+# <<<  - Here string

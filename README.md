@@ -45,7 +45,7 @@ Each lesson/example file contains short comments and a runnable snippet. Recomme
 4. forloop.sh / whileloop.sh
 5. if-else.sh / case-statement.sh
 6. functions.sh
-7. IO-RedirectionNotes.txt and FileCondtion.sh
+7. arguments.sh / FileCondition.sh / IO-RedirectionNotes.txt
 8. Arrays.sh
 9. SimpleProjects/* then AdvanceProjects/*
 

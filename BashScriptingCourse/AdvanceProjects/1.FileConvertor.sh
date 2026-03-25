@@ -1,27 +1,30 @@
 #!/bin/bash
-#This  peace of code is written to convert .jpg into png files
-#So this is mainly the changing of the file extension
+# This script converts image files (e.g., .jpg to .png)
+# It requires ImageMagick to be installed
 
-
-#For this we gonna the following tools using the following set of commands
-
-sudo apt install graphicsmagick-imagemagick-compat
-
-#Now let proceed with the program
-
-if [ $# -eq 0 ]
-then  
-     echo " Usage :$0 [file-1] [file-2] ... [file-n]"
+# Check if ImageMagick is installed
+if ! command -v convert &> /dev/null; then
+    echo "Installing required ImageMagick package..."
+    sudo apt-get update && sudo apt-get install -y imagemagick
 fi
 
-for i in $@
-do
-    if [ -f $i 
-then
-  convert $i $i.png
-else
-echo "ERROR $i is not a file"
+# Check if arguments were provided
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 [file-1] [file-2] ... [file-n]"
+    echo "Example: $0 image1.jpg image2.jpg"
+    exit 1
 fi
+
+# Process each file
+for file in "$@"; do
+    if [ -f "$file" ]; then
+        # Extract filename without extension
+        filename="${file%.*}"
+        convert "$file" "${filename}.png"
+        echo "Converted: $file -> ${filename}.png"
+    else
+        echo "ERROR: $file is not a file"
+    fi
 done
 
 echo "File conversion completed"
